@@ -5,16 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart 3000</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://kit.fontawesome.com/8cc9ee3dc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    
+  <header class="flex">
+    <h1 id="logo"><i class="fa-solid fa-cart-plus"></i> Shopping Cart 3000 </i></h1>
+    <div class="dateBlock flex">
+      <i class="fa-regular fa-calendar-days white"></i>
+      <div id="date"></div>
+    </div>
   </header>
   
   <main>
-    <div>
-      
+    <div class="listContainer">
+      <div class="inputBlock">
+        <form action="" method="get" id="inputForm" name="">
+          <label for="mainInput">Type and add your item below:</label>
+          <input type="text" class="mainInput">
+          <button type="submit" class="submitBtn">Add</button>
+        </form>
+      </div>
+      <ul>
+        <div class="item">
+          <li>Batonas</li>
+          <button></button>
+        </div>
+        <div class="item">
+          <li>Silke</li>
+          <button></button>
+        </div>
+        <div class="item">
+          <li>Paprika</li>
+          <button></button>
+        </div>
+      </ul>
     </div>
   </main>
 

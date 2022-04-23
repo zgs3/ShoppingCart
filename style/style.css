@@ -1,0 +1,93 @@
+@import './global.css';
+
+header {
+  justify-content: space-between;
+  height: 5rem;
+  background-color: var(--orangeTransparent);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  color: var(--white);
+  text-shadow: var(--shadow);
+  padding: 1rem 1rem;
+  font-weight: 1000;
+  font-style: italic;
+}
+
+i {
+  font-size: 2rem;
+}
+
+form {
+  width: 30rem;
+  margin: auto;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: .5rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: var(--shadow);
+}
+
+.white {
+  color: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.dateBlock {
+  align-items: center;
+}
+
+.inputBlock {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.mainInput, 
+.submitBtn {
+  border: none;
+  padding: .5rem;
+  font-size: 1.8rem;
+  /* border-radius: 5px; */
+}
+
+.submitBtn {
+  background-color: var(--yellow2);
+  padding: .5rem 1rem;
+  margin-left: .3rem;
+  cursor: pointer;
+}
+
+.listContainer {
+  width: 50%;
+  margin: 3rem auto;
+  padding: 2rem 2rem;
+  border-radius: 15px;
+  background-color: var(--orangeTransparent);
+}
+
+.item {
+  font-size: 2rem;
+  color: var(--white);
+  text-shadow: var(--shadow);
+  border: 2px solid var(--orange1);
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin: .5rem 0;
+  background: var(--yellow3);
+  list-style: none;
+}
+
+#date {
+  font-size: 1.7rem;
+  padding: 1.5rem 1rem;
+  color: var(--white);
+  text-shadow: var(--shadow);
+}
