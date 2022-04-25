@@ -58,6 +58,10 @@ label {
   /* border-radius: 5px; */
 }
 
+.mainInput {
+  width: 80%;
+}
+
 .submitBtn {
   background-color: var(--yellow2);
   padding: .5rem 1rem;
