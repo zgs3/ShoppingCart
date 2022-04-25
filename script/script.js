@@ -5,6 +5,7 @@ const submitBtn = document.querySelector('.submitBtn');
 const itemsUl = document.querySelector('.itemsUl');
 
 submitBtn.addEventListener('click', itemAdder);
+itemsUl.addEventListener('click', checkOrDelete)
 
 function itemAdder(event){
   event.preventDefault();
@@ -28,4 +29,17 @@ function itemAdder(event){
   itemDiv.append(deleteBtn);
   // appending whole new div to ul
   itemsUl.append(itemDiv);
+}
+
+function checkOrDelete(event) {
+  const item = event.target;
+  const itemParent = item.parentElement;
+  if (item.classList[1] == 'fa-trash-can') {
+    let target = itemParent.parentElement;
+    target.remove();
+  }
+  if (item.classList[1] == 'fa-circle-check') {
+    let target = itemParent.parentElement;
+    target.classList.add('checked');
+  }
 }

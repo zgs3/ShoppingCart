@@ -114,6 +114,12 @@ label {
   font-size: 3rem;
 }
 
+.checked {
+  text-decoration: line-through;
+  background: var(--orange1);
+  opacity: .7;
+}
+
 #date {
   font-size: 1.7rem;
   padding: 1.5rem 1rem;
