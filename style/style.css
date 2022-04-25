@@ -55,7 +55,6 @@ label {
   border: none;
   padding: .5rem;
   font-size: 1.8rem;
-  /* border-radius: 5px; */
 }
 
 .mainInput {
@@ -80,13 +79,39 @@ label {
 .item {
   font-size: 2rem;
   color: var(--white);
+  padding: 1rem 1rem;
+  margin: .5rem 0;
+  justify-content: space-between;
+  align-items: center;
   text-shadow: var(--shadow);
   border: 2px solid var(--orange1);
   border-radius: 5px;
-  padding: 1rem 1rem;
-  margin: .5rem 0;
   background: var(--yellow3);
   list-style: none;
+}
+
+.itemLi {
+  flex: 1;
+}
+
+.checkBtn,
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 .5rem;
+}
+
+.checkBtn {
+  color: var(--green);
+}
+
+.deleteBtn {
+  color: var(--red);
+}
+
+.item i {
+  font-size: 3rem;
 }
 
 #date {
