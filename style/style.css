@@ -2,6 +2,7 @@
 
 header {
   justify-content: space-between;
+  align-items: center;
   height: 5rem;
   background-color: var(--orangeTransparent);
   box-shadow: var(--shadow);
@@ -20,14 +21,12 @@ i {
 }
 
 form {
-  width: 30rem;
   margin: auto;
 }
 
 label {
   display: block;
-  text-align: left;
-  margin: .5rem;
+  margin: .5rem auto;
   font-size: 1.5rem;
   color: var(--white);
   text-shadow: var(--shadow);
@@ -47,7 +46,7 @@ label {
 
 .inputBlock {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 
 .mainInput, 
@@ -59,7 +58,8 @@ label {
 }
 
 .mainInput {
-  width: 80%;
+  min-width: 40%;
+  max-width: 70%;
 }
 
 .editInput {
@@ -109,6 +109,14 @@ label {
   margin: 0 .5rem;
 }
 
+.checkBtn:hover,
+.deleteBtn:hover,
+.editBtn:hover,
+.submitBtn:hover {
+  filter: invert(.3);
+  transition: .2s;
+}
+
 .checkBtn {
   color: var(--green);
 }
@@ -125,6 +133,7 @@ label {
   text-decoration: line-through;
   background: var(--orange1);
   opacity: .7;
+  transition: .5s;
 }
 
 .hidden {
@@ -136,4 +145,41 @@ label {
   padding: 1.5rem 1rem;
   color: var(--white);
   text-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 780px) {
+  .listContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listContainer {
+    width: 90%;
+  }
+  
+  .item i {
+    font-size: 2.4rem;
+  }
+  
+  h1,
+  #date,
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h1 > i {
+    animation: icon-spin infinite 10s linear;
+  }
+}
+
+@keyframes icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -1,22 +1,11 @@
 :root {
-  --background: #EBEEF5;
   --orange2: #DC2F02;
   --orangeTransparent: #dc2e02ea;
   --white: #FFFFFF;
   --green: #68e168;
   --red: #e70000;
-
-  
-  --black: #03071E;
-  --red4: #370617;
-  --red3: #6A040F;
-  --red2: #9D0208;
-  --red1: #D00000;
-  --orange1: #E85D04;
   --yellow3: #F48C06;
   --yellow2: #FAA307;
-  --yellow1: #FFBA08;
-
   --font:'Montserrat', sans-serif;;
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
