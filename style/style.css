@@ -127,6 +127,10 @@ label {
   opacity: .7;
 }
 
+.hidden {
+  display: none;
+}
+
 #date {
   font-size: 1.7rem;
   padding: 1.5rem 1rem;
